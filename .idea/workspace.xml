@@ -65,14 +65,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22651006" vertical-offset="0" max-vertical-offset="596">
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="345">
               <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
                 <element signature="e#46#103#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.05042017" vertical-offset="0" max-vertical-offset="595">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/views/User/index.html.twig" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -745,11 +756,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22651006" vertical-offset="0" max-vertical-offset="596">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="345">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="e#46#103#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05042017" vertical-offset="0" max-vertical-offset="595">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
