@@ -1,0 +1,3 @@
+e_kreative_homepage:
+    path:     /
+    defaults: { _controller: eKreativeBundle:User:index }

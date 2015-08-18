@@ -1,0 +1,31 @@
+eKreativeBundle\Entity\Message:
+    type: entity
+    table: null
+    repositoryClass: eKreativeBundle\Entity\MessageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        topic:
+            type: string
+            length: '255'
+            notnull: true
+        body:
+            type: text
+    lifecycleCallbacks: {  }
+    manyToOne:
+        userTo:
+            targetEntity: eKreativeBundle\Entity\User
+            inversedBy: MessageTo
+            joinColumn:
+                name: user_to
+                referencedColumnName: id
+        userFrom:
+            targetEntity: eKreativeBundle\Entity\User
+            inversedBy: MessageFrom
+            joinColumn:
+                name: user_from
+                referencedColumnName: id

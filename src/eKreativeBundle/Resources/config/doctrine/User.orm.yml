@@ -1,0 +1,40 @@
+eKreativeBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: eKreativeBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: '100'
+            column: first_name
+            notnull: true
+        lastName:
+            type: string
+            length: '100'
+            column: last_name
+            notnull: true
+        email:
+            type: string
+            length: '255'
+            notnull: true
+            unique: true
+    lifecycleCallbacks: {  }
+    oneToMany:
+        MessageTo:
+            targetEntity: eKreativeBundle\Entity\Message
+            mappedBy: User
+            joinColumn:
+                name: id
+                referencedColumnName: user_to
+        MessageFrom:
+            targetEntity: eKreativeBundle\Entity\Message
+            mappedBy: User
+            joinColumn:
+                name: id
+                referencedColumnName: user_from

@@ -1,0 +1,4 @@
+services:
+#    e_kreative.example:
+#        class: eKreativeBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

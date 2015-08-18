@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test project #2 for eKreative!</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta content="test info tor test" name="description">
+        <meta content="test, task, eKreative, symfony2, job" name="keywords">
+        {% stylesheets '@eKreativeBundle/Resources/public/css/*' %}
+            <link href="{{ asset_url }}" rel="stylesheet">
+        {% endstylesheets %}
+        {% javascripts '@eKreativeBundle/Resources/public/js/*' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row vertical-center-row">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        List of registered users:
+                        <div class="btn-group btn-group-xs pull-right">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Create new user">
+                                <span class="glyphicon glyphicon-plus"></span> New
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        {% if users %}
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for user in users %}
+                                        <tr>
+                                            <td>{{ user.getFirstName() }}</td>
+                                            <td>{{ user.getLastName() }}</td>
+                                            <td>
+                                                <div class="btn-group btn-group-xs pull-right" data-user-id="{{ user.getId() }}">
+                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Create new message">
+                                                        <span class="glyphicon glyphicon-envelope"></span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Open history">
+                                                        <span class="glyphicon glyphicon-align-justify"></span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Delete user">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        {% else %}
+                            No users have been found.
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
