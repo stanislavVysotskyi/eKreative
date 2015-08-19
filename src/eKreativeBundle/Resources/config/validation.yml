@@ -1,0 +1,34 @@
+eKreativeBundle\Entity\User:
+    constraints:
+            - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: email
+    properties:
+        firstName:
+            - NotBlank: ~
+            - Type:
+                type: string
+                message: The value {{ value }} is not a valid {{ type }}
+            - Length:
+                min: 3
+                max: 100
+                minMessage: "Your first name must be at least {{ limit }} characters long"
+                maxMessage: "Your first name cannot be longer than {{ limit }} characters"
+        lastName:
+            - NotBlank: ~
+            - Type:
+                type: string
+                message: The value {{ value }} is not a valid {{ type }}
+            - Length:
+                min: 3
+                max: 100
+                minMessage: "Your last name must be at least {{ limit }} characters long"
+                maxMessage: "Your last name cannot be longer than {{ limit }} characters"
+        email:
+            - NotBlank: ~
+            - Email:
+                message: The email "{{ value }}" is not a valid email
+                checkMX: true
+            - Length:
+                min: 3
+                max: 100
+                minMessage: "Your last name must be at least {{ limit }} characters long"
+                maxMessage: "Your last name cannot be longer than {{ limit }} characters"

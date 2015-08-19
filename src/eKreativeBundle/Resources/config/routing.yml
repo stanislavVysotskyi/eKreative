@@ -1,3 +1,16 @@
-e_kreative_homepage:
+e_kreative_list_of_users:
     path:     /
     defaults: { _controller: eKreativeBundle:User:index }
+    methods:  GET
+e_kreative_new_user:
+    path:     /new-user
+    defaults: { _controller: eKreativeBundle:User:form }
+    methods:  GET
+e_kreative_create_user:
+    path:     /new-user
+    defaults: { _controller: eKreativeBundle:User:save }
+    methods:  POST
+e_kreative_delete_user:
+    path:     /delete-user/{id}
+    defaults: { _controller: eKreativeBundle:User:delete }
+    methods:  DELETE

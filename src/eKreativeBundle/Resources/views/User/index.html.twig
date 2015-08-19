@@ -19,7 +19,7 @@
                     <div class="panel-heading">
                         List of registered users:
                         <div class="btn-group btn-group-xs pull-right">
-                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Create new user">
+                            <button type="button" class="btn btn-default new-user" data-toggle="tooltip" title="Create new user">
                                 <span class="glyphicon glyphicon-plus"></span> New
                             </button>
                         </div>
@@ -47,7 +47,7 @@
                                                     <button type="button" class="btn btn-default" data-toggle="tooltip" title="Open history">
                                                         <span class="glyphicon glyphicon-align-justify"></span>
                                                     </button>
-                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Delete user">
+                                                    <button type="button" class="btn btn-default delete" data-toggle="tooltip" title="Delete user">
                                                         <span class="glyphicon glyphicon-remove"></span>
                                                     </button>
                                                 </div>
@@ -60,6 +60,20 @@
                             No users have been found.
                         {% endif %}
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p></p>
+                    </div>
+                    <div class="modal-footer"></div>
                 </div>
             </div>
         </div>

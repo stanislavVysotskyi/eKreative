@@ -30,6 +30,16 @@ class User
     private $email;
 
     /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $MessageTo;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $MessageFrom;
+
+    /**
      * Get id
      *
      * @return integer 
@@ -107,13 +117,4 @@ class User
     {
         return $this->email;
     }
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $MessageTo;
-
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $MessageFrom;
 }

@@ -1,7 +1,6 @@
 eKreativeBundle\Entity\User:
     type: entity
     table: null
-    repositoryClass: eKreativeBundle\Entity\UserRepository
     id:
         id:
             type: integer
