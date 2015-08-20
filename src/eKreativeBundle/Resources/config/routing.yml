@@ -14,3 +14,15 @@ e_kreative_delete_user:
     path:     /delete-user/{id}
     defaults: { _controller: eKreativeBundle:User:delete }
     methods:  DELETE
+e_kreative_message_form:
+    path:     /get-message-form/{id}
+    defaults: { _controller: eKreativeBundle:Message:form }
+    methods:  GET
+e_kreative_create_message:
+    path:     /new-message
+    defaults: { _controller: eKreativeBundle:Message:save }
+    methods:  POST
+e_kreative_list_of_messages:
+    path:     /history/{id}
+    defaults: { _controller: eKreativeBundle:Message:history }
+    methods:  GET

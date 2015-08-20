@@ -32,3 +32,17 @@ eKreativeBundle\Entity\User:
                 max: 100
                 minMessage: "Your last name must be at least {{ limit }} characters long"
                 maxMessage: "Your last name cannot be longer than {{ limit }} characters"
+eKreativeBundle\Entity\Message:
+    properties:
+        topic:
+            - NotBlank: ~
+            - Type:
+                type: string
+                message: The value {{ value }} is not a valid {{ type }}
+            - Length:
+                min: 3
+                max: 100
+                minMessage: "Your topic must be at least {{ limit }} characters long"
+                maxMessage: "Your topic cannot be longer than {{ limit }} characters"
+        body:
+            - NotBlank: ~

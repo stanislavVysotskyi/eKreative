@@ -41,12 +41,12 @@
                                             <td>{{ user.getLastName() }}</td>
                                             <td>
                                                 <div class="btn-group btn-group-xs pull-right" data-user-id="{{ user.getId() }}">
-                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Create new message">
+                                                    <button type="button" class="btn btn-default message" data-toggle="tooltip" title="Create new message">
                                                         <span class="glyphicon glyphicon-envelope"></span>
                                                     </button>
-                                                    <button type="button" class="btn btn-default" data-toggle="tooltip" title="Open history">
+                                                    <a type="button" class="btn btn-default" href="history/{{ user.getId() }}" data-toggle="tooltip" title="Open history">
                                                         <span class="glyphicon glyphicon-align-justify"></span>
-                                                    </button>
+                                                    </a>
                                                     <button type="button" class="btn btn-default delete" data-toggle="tooltip" title="Delete user">
                                                         <span class="glyphicon glyphicon-remove"></span>
                                                     </button>

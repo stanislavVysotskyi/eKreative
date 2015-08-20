@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test project #2 for eKreative!</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="test info tor test" name="description">
+    <meta content="test, task, eKreative, symfony2, job" name="keywords">
+    {% stylesheets '@eKreativeBundle/Resources/public/css/*' %}
+    <link href="{{ asset_url }}" rel="stylesheet">
+    {% endstylesheets %}
+    {% javascripts '@eKreativeBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+</head>
+<body>
+<div class="container">
+    <div class="row vertical-center-row">
+        <div class="panel panel-success">
+            <div class="panel-heading" data-user-id="{{ user.getId() }}">
+                History for {{ user.getFirstName() }} {{ user.getLastName() }}
+                [<a class="user-email">{{ user.getEmail() }}</a>]:
+                <div class="btn-group btn-group-xs pull-right">
+                    <button type="button" class="btn btn-default back-to-user-list" data-toggle="tooltip" title="Back to list of user">
+                        <span class="glyphicon glyphicon-arrow-left"></span> Back
+                    </button>
+                </div>
+            </div>
+            <div class="panel-body">
+                {% if messages %}
+                    <div class="list-group">
+                        {% for message in messages %}
+                            <a class="list-group-item" id="{{ message.getId() }}">
+                                <h4 class="list-group-item-heading">
+                                    {{ message.getTopic() }}
+                                    {% if message.getSent() != true %}
+                                        <span class="glyphicon glyphicon-envelope btn-xs waiting-send"> [waiting]</span>
+                                    {% else %}
+                                        <span class="glyphicon glyphicon-envelope btn-xs sent"></span>
+                                    {% endif %}
+                                </h4>
+                                <p class="list-group-item-text">{{ message.getBody() }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    No messages have been found.
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

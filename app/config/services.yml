@@ -4,6 +4,8 @@ parameters:
 #    parameter_name: value
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+ ekreative.type.entity_hidden:
+   class: eKreativeBundle\Form\Type\EntityHiddenType
+   arguments: ["@doctrine.orm.entity_manager"]
+   tags:
+   - { name: form.type, alias: entity_hidden }

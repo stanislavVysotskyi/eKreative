@@ -34,11 +34,6 @@ class Message
     private $body;
 
     /**
-     * @var boolean
-     */
-    private $sent = false;
-
-    /**
      * Get id
      *
      * @return integer 
@@ -118,25 +113,25 @@ class Message
     }
 
     /**
-     * Set sent
+     * Set userFrom
      *
-     * @param $sent
+     * @param \eKreativeBundle\Entity\User $userFrom
      * @return Message
      */
-    public function setSent( $sent = null )
+    public function setUserFrom(\eKreativeBundle\Entity\User $userFrom = null)
     {
-        $this->sent = $sent != null ? false : true;
+        $this->userFrom = $userFrom;
 
         return $this;
     }
 
     /**
-     * Get sent
+     * Get userFrom
      *
-     * @return \bool 
+     * @return \eKreativeBundle\Entity\User 
      */
-    public function getSent()
+    public function getUserFrom()
     {
-        return $this->sent;
+        return $this->userFrom;
     }
 }
