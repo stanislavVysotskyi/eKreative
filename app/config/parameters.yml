@@ -1,0 +1,1 @@
+{ parameters: { database_host: localhost, database_port: null, database_name: ekreative, database_user: root, database_password: '1234', mailer_transport: gmail, mailer_host: ~, mailer_user: null, mailer_password: null, secret: 6ecb8b23817c0f6e0a59917f2d7fe9a2e1082d25, database_driver: pdo_mysql, database_path: null } }
