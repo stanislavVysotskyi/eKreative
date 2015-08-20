@@ -44,7 +44,6 @@
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Form/Type/EntityToIdTransformer.php" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Controller/MessageController.php" />
-        <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/public/js/main.js" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/public/css/main.css" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/views/User/index.html.twig" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/views/Message/history.html.twig" />
@@ -55,6 +54,7 @@
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Command/SendCommand.php" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/config/doctrine/Message.orm.yml" />
         <option value="$PROJECT_DIR$/src/eKreativeBundle/Tests/Utility/UserTest.php" />
+        <option value="$PROJECT_DIR$/src/eKreativeBundle/Resources/public/js/main.js" />
       </list>
     </option>
   </component>
@@ -159,37 +159,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ekreative" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ekreative" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eKreativeBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -673,14 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Resources/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="1605">
-          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Form/MessageType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5521472" vertical-offset="0" max-vertical-offset="810">
@@ -797,14 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Tests/Utility/UserTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43711656" vertical-offset="0" max-vertical-offset="652">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43711656" vertical-offset="630" max-vertical-offset="1485">
@@ -822,6 +776,22 @@
           <folding>
             <element signature="e#43#108#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Tests/Utility/UserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.506135" vertical-offset="0" max-vertical-offset="652">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eKreativeBundle/Resources/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7322485" vertical-offset="74" max-vertical-offset="1605">
+          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
